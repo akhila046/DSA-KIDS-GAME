@@ -1,0 +1,72 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 32px;
+  background: var(--card);
+  border-bottom: 2px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(108,99,255,0.08);
+}
+
+.navbar-brand {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.6rem;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover { color: var(--primary); }
+
+.theme-toggle {
+  background: var(--bg);
+  border: 2px solid var(--border);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  font-size: 1.5rem;
+  color: var(--text);
+  padding: 4px 8px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0; right: 0;
+    background: var(--card);
+    padding: 20px;
+    border-bottom: 2px solid var(--border);
+    gap: 14px;
+  }
+  .navbar-links.open { display: flex; }
+}

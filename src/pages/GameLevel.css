@@ -1,0 +1,75 @@
+.game-level {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.back-btn {
+  background: var(--card);
+  border: 2px solid var(--border);
+  color: var(--text);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.game-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+.game-title span { font-size: 2rem; }
+.game-title h2 { font-size: 1.6rem; }
+
+.phase-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.phase-indicator .active { color: var(--primary); font-weight: 800; }
+.phase-indicator .divider { opacity: 0.4; }
+
+/* Complete screen */
+.complete-screen {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.complete-card {
+  text-align: center;
+  max-width: 440px;
+  width: 100%;
+  padding: 48px 40px;
+}
+
+.complete-emoji { font-size: 4rem; display: block; margin-bottom: 16px; }
+.complete-card h2 { font-size: 2rem; margin-bottom: 10px; }
+.complete-card p { color: var(--text-muted); margin-bottom: 20px; font-size: 1.05rem; }
+.complete-card strong { color: var(--primary); }
+
+.complete-badges { display: flex; gap: 10px; justify-content: center; margin-bottom: 28px; }
+
+.complete-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+.not-found {
+  text-align: center;
+  padding: 80px;
+  font-size: 1.5rem;
+  color: var(--text-muted);
+}
