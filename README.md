@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fredoka+One&size=40&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=DSA+Kids+Learning+Game+🎮;Learn+DSA+Through+Play!;Master+Algorithms+with+Fun!" alt="Typing SVG" />
+
 
 <br/>
 
