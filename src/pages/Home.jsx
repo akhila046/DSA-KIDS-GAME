@@ -26,7 +26,7 @@ export default function Home() {
       <section className="hero">
         <motion.div
           className="hero-content"
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 1, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
@@ -40,9 +40,8 @@ export default function Home() {
         </motion.div>
         <motion.div
           className="hero-visual"
-          initial={{ opacity: 0, scale: 0.8 }}
+          initial={{ opacity: 1, scale: 1 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="floating-cards">
             {['📦', '🍽️', '🌳', '🔗'].map((e, i) => (
